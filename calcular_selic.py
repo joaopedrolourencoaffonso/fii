@@ -42,10 +42,7 @@ for item in objeto:
 
         
 
-#O QUE FALTA FAZER:
-        #2) Calcular o rendimento já considerando uma margem de segurança (últimos 10 meses)
-        #3) Opção de ver se há fundos novos ou não, ideia seria usar um banco de dados
-
-
-#NOTA: Quando você aplicar banco de dados, uma boa ideia seria colocar uma opção de olhar se há fundos novos ou não.
+#OBS: Esse script ainda não está pronto e como você pode perceber, não é muito eficiente, porém, ele já é capaz de listar todos os preços
+#de todos os fundos disponíveis no site fii.com.br, tenho algumas ideias para diminuir o consumo de memória e cálculo de rendimento
+#com margem de segurança, mas ainda vai levar um tempinho :)
 
