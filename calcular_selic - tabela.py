@@ -52,3 +52,5 @@ for item in objeto:
         print(total)
         break
                 
+##eu sei, eu sei, o fii.com já oferece uma sessão com o yield calculado,
+##mas eu queria fazer um programa que pudesse ler os valores diretamente de uma tabela
