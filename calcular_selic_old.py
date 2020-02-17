@@ -46,3 +46,5 @@ for item in objeto:
 #de todos os fundos disponíveis no site fii.com.br, tenho algumas ideias para diminuir o consumo de memória e cálculo de rendimento
 #com margem de segurança, mas ainda vai levar um tempinho :)
 
+#OBS2: Esse script foi superado pelo novo calcular_selic, que é capaz de fazer muito mais
+
