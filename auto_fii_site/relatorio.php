@@ -2,7 +2,6 @@
 
 
 $fundos = $_POST["fundos"];
-$space = "------------";
 
 echo '<!DOCTYPE html>
 <html>
@@ -43,7 +42,7 @@ echo '<!DOCTYPE html>
 	  </tr>';
 
 
-echo exec("teste.py $fundos");
+echo exec("relatorio_data.py $fundos");
 
 
 echo "
@@ -52,8 +51,5 @@ echo "
 </body>
 </html>";
 
-#print($space);
-
-#print($fundos);
 
 ?>
