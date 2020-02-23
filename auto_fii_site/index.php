@@ -30,7 +30,7 @@
 	<p>ou</p>
 	<p>você pode ver um relatório sobre todos os fundos com informações disponíveis no site fii.com!</p>
 	<a href="relatorio_gerencial.php" target="_blank">Relatórios Gerenciais</a>
-	<a href="default.asp" target="_blank">Relatório de Fundos Listados</a>
+	<a href="relatorio_fundos.php" target="_blank">Relatório de Fundos Listados</a>
 	<br>
 
 </div>
