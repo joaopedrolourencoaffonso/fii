@@ -83,7 +83,7 @@ for item in objeto:
                 pvp = temp2 / temp1
                 pvp = '%.2f' % pvp
         ##########################################
-        site = ' "href=https://fiis.com.br/' + nome + '/" target="_blank"'
+        site = ' href="https://fiis.com.br/' + nome + '/" target="_blank"'
         string = string + "<tr> <td> <a" + site + ">" + nome + "</td> <td>" + preco + "</td> <td>" + yield_value + "</td> <td>" + ultimo_rend + "</td> <td>" + patrimonio + "</td> <td>" + valor_patr + "</td> <td>" + pvp + "</td>"
 
 
