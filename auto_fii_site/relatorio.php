@@ -2,6 +2,9 @@
 
 
 $fundos = $_POST["fundos"];
+$myfile = fopen("historico.txt", "w") or die("Unable to open file!");
+fwrite($myfile, $fundos);
+fclose($myfile);
 
 echo '<!DOCTYPE html>
 <html>
