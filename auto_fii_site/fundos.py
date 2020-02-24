@@ -83,50 +83,11 @@ for item in objeto:
                 pvp = temp2 / temp1
                 pvp = '%.2f' % pvp
         ##########################################
-        #string = ""
-        string = string + "<tr> <td>" + nome + "</td> <td>" + preco + "</td> <td>" + yield_value + "</td> <td>" + ultimo_rend + "</td> <td>" + patrimonio + "</td> <td>" + valor_patr + "</td> <td>" + pvp + "</td>"
-        #file.write(string)
+        site = ' "href=https://fiis.com.br/' + nome + '/" target="_blank"'
+        string = string + "<tr> <td> <a" + site + ">" + nome + "</td> <td>" + preco + "</td> <td>" + yield_value + "</td> <td>" + ultimo_rend + "</td> <td>" + patrimonio + "</td> <td>" + valor_patr + "</td> <td>" + pvp + "</td>"
 
-        #print("Nome-------Preço-------Dividendo Yield-------Último Rendimento-------Patrimônio Líquido-------Valor Patrimonial-------p/vp")
-        #print(nome + "     " + preco + "         " + yield_value + "                    " + ultimo_rend + "                 " + patrimonio + "                   " + valor_patr + "             " + pvp)
-        #print("--------------------------------------------------------------------------------------------------------------------------")
+
+        
 
 string = string + " </tr>"
 print(string)
-
-
-
-#file.close()
-
-
-#fundos = str(sys.argv[1])
-#fundos = fundos.split(';')
-
-#string = ""
-
-#for fii in fundos:
-#        temp = fii.lower()
-#        target = "Gerencial"
-#        res = requests.get("https://fiis.com.br/" + temp + "/")
-#        res.raise_for_status()
-#        obj = bs4.BeautifulSoup(res.text, features="html.parser")
-#        objeto = obj.select('li a')
-#        lenght = len(objeto)
-#        #print(lenght)
-#        i = 0
-#        #print(objeto)
-#        while i < lenght:
-#            info_fii = str(objeto[i])
-#            i = i + 1
-#            pos = info_fii.find(target)
-#            if pos > 0:
-#                data = info_fii.split('\n', 1)
-#                site = 'href="' + str(data[0][9:90]) + '/"'
-#                string = string + '<tr> <td> <a ' + site + ' target="_blank">' +  temp + '</a></td> <td>' + data[1][19:27] + '</td> </tr>'
-                #print("Relatório Gerencial: " + data[1][19:27])
-#                break
-
-#print(string)
-
-
-
