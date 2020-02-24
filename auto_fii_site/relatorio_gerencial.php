@@ -23,12 +23,13 @@
 			<input type="submit" style="background-color: #4CAF50; font-family:arial; font-size:15px; color: white; text-align: center; width:150px; height:40px" value="Ver"/>
 	</form>
 
-	<!--<textarea id="Textarea" rows="2" cols="50" align="center">
-		ALZR11;ABCP11
-	</textarea> -->
-	<br>
-	<!--<button type="button" style="background-color: #4CAF50; font-family:arial; font-size:15px; color: white; text-align: center; width:150px; height:40px" onclick="text_area_function()">Ver Datas</button> -->
-	
+	<?php
+	$myfile = fopen("historico.txt", "r") or die("Unable to open file!");
+	$var = fread($myfile,filesize("historico.txt"));
+	echo '<p style="border-style: solid; color: #003300; font-family:courier; width:300px; height:20px;">A sua última pesquisa foi:</p>';
+	echo "<p>$var</p>";
+	fclose($myfile);
+	?>
 
 <div>
 
